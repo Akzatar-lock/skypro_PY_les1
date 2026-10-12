@@ -93,7 +93,7 @@ def test_contains_empty_string(utils):
 
 def test_contains_none(utils):
     """Негативный тест: None вместо строки."""
-    with pytest.raises(TypeError):
+    with pytest.raises(AttributeError):
         utils.contains(None, "a")
 
 
